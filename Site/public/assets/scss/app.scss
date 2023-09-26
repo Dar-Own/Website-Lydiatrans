@@ -1,0 +1,355 @@
+@import 'pages/mixins.scss';
+
+/*sass --watch public/assets/scss/app.scss:public/assets/css/app.css --style compressed*/
+
+
+body{
+    background-color: #1e1e1e;
+    font-family: 'Raleway', sans-serif;
+}
+.main{
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10%;
+    color: white;
+}
+
+.image{
+    margin-bottom: 30px;
+}
+
+#mainText{
+    text-align: center;
+}
+
+#navbar{
+    background-color: #07499d;
+}
+
+#navbarText {
+    text-align: center;
+}
+
+.servicesPremierePartie{
+    font-size: 15px;
+}
+
+.iconAndCaption {
+    width: 20%;
+}
+/*.rectangleNoir{
+    position: absolute;
+    top: 56%;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    padding: 20px 50px;
+    display: flex;
+    margin-right: 20%;
+    margin-left: 20%;
+    height: 15%;
+    width: 50%;
+}*/
+
+.hr{
+    background-color:white; 
+    width: 19%;
+}
+
+.textDescription{
+    padding-left: 15%;
+    padding-right: 15%;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    line-height: 2.2em;
+    letter-spacing: 1px;
+}
+
+strong{
+    font-weight: normal;
+}
+
+.button{
+    background-color: #07499d;
+    color: white;
+    border: none;
+    width: 300px;
+    position: relative;
+    left: 39%;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/*.lienContact{
+    text-decoration: none;
+    color: white;
+}*/
+
+@media (max-width: 1024px) {
+    .button{
+        background-color: #07499d;
+        color: white;
+        border: none;
+        width: 200px;
+    }
+}
+
+@media (max-width: 700px) {
+    .main{
+        height: auto;
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10%;
+        color: white;
+    }
+
+    .iconAndCaption{
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .image{
+        margin-bottom: 15px;
+    }
+
+    .hr{
+        width: 40%;
+    }
+
+    .textDescription{
+        padding-left: 15%;
+        padding-right: 15%;
+        color: white;
+        font-size: 10px;
+        text-align: center;
+        line-height: 2.2em;
+        letter-spacing: 1px;
+    }
+
+    .button{
+        background-color: #07499d;
+        color: white;
+        border: none;
+        width: 200px;
+    }
+
+    .divContact{
+        width: 0%;
+        position: relative;
+        left: 37%;
+    }
+}
+
+@media (max-width: 443px) {
+    .divContact{
+        width: 0%;
+        position: relative;
+        left: 25%;
+    }
+}
+
+
+/*Services*/
+
+#sectionImage{
+    background-image: url("../../../Lydia\ Images/Port4.jpg");
+    height: 2160px;
+}
+
+#dedouanement{
+    color: #07499d; 
+    font-size: 80px;
+}
+
+
+#arrowDownDedouanement{
+    color: #07499d;
+    font-size: 80px;
+}
+
+#directoireDedouanement{
+    background-color: #d2d3d5;
+    border-radius: 1em;
+    padding: 10px;
+    height: 100%;
+}
+
+#directoireParagrapheDedouanement{
+    font-size: 30px;
+}
+
+
+@media (max-width: 700px) {
+    #dedouanement{
+        color: #07499d; 
+        font-size: 45px;
+    }
+
+    #arrowDownDedouanement{
+        color: #07499d;
+        font-size: 80px;
+    }
+
+    #directoireParagrapheDedouanement{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1300px) {
+    #directoireParagrapheDedouanement{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 992px) {
+    #directoireParagrapheDedouanement{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    #directoireParagrapheDedouanement{
+        font-size: 14px;
+    }
+}
+
+#transport{
+    color: #07499d; 
+    font-size: 80px;
+}
+
+
+#arrowDownTransport{
+    color: #07499d;
+    font-size: 80px
+}
+
+#accompagnement{
+    color: #07499d; 
+    font-size: 80px;
+}
+
+
+#arrowDownAccompagnement{
+    color: #07499d;
+    font-size: 80px;
+}
+
+
+
+@media (max-width: 700px) {
+    #transport{
+        color: #07499d; 
+        font-size: 60px;
+    }
+
+    #arrowDownDedouanement{
+        color: #07499d;
+        font-size: 80px;
+    }
+
+    #directoireParagrapheDedouanement{
+        font-size: 15px;
+    }
+
+    #accompagnement{
+        color: #07499d; 
+        font-size: 40px;
+    }
+    
+    
+    #arrowDownAccompagnement{
+        color: #07499d;
+        font-size: 80px;
+    }
+}
+
+#directoireAccompagnement{
+    background-color: #e5f3ff;
+    border-radius: 1em;
+    padding: 10px;
+    height: 100%;
+}
+
+#directoireParagrapheAccompagnement{
+    font-size: 25.5px;
+}
+
+@media (max-width: 1300px) {
+    #directoireParagrapheAccompagnement{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1050px) {
+    #directoireParagrapheAccompagnement{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 992px) {
+    #directoireParagrapheAccompagnement{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    #directoireParagrapheAccompagnement{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 320px) {
+    #transport{
+        font-size: 40px;
+    }
+    #arrowDownTransport{
+        font-size: 40px;
+    }
+
+    #dedouanement{
+        font-size: 35px;
+    }
+    #arrowDownDedouanement{
+        font-size: 35px;
+    }
+
+    #accompagnement{
+        font-size: 30px;
+    }
+    #arrowDownAccompagnement{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .corps{
+        width: 371px;
+    }
+}
+
+/*Contact*/
+
+#coordonnees{
+    font-size: 30px;
+}
+
+
+#carnetCoordonnees1{
+    font-size: 30px;
+    color: #07499d;
+}
+
+#Services{
+    font-size: 30px;
+    color: #07499d;
+
+}
+
+.bleuLydia{
+    color: #07499d;
+}
